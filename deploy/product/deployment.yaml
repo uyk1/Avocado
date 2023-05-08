@@ -19,3 +19,10 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
+        volumeMounts:
+        - name: product-logs
+          mountPath: /var/log/tomcat
+      volumes:
+      - name: product-logs
+        hostPath:
+          path: /var/log/tomcat
