@@ -1,0 +1,62 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: default
+  name: my-ingress
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /merchandise
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-product
+            port:
+              number: 80
+      - path: /member
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-member
+            port:
+              number: 80              
+      - path: /search
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-search
+            port:
+              number: 80        
+      # - path: /payment
+      #   pathType: Prefix
+      #   backend:
+      #     service:
+      #       name: avocado-payment
+      #       port:
+      #         number: 80                       
+      - path: /community
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-community
+            port:
+              number: 80         
+      - path: /commercial
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-commercial
+            port:
+              number: 80
+      - path: /argocd
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server
+            port:
+              number: 80

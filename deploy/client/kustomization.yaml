@@ -4,7 +4,6 @@ namePrefix: avocado-
 resources:
 - deployment.yaml
 - service.yaml
-- ingress.yaml
 
 vars:
 - fieldref:
@@ -16,5 +15,3 @@ vars:
     name: client
 images:
 - name: avocado-client
-  newName: 749740892195.dkr.ecr.ap-northeast-2.amazonaws.com/avocado-client
-  newTag: "57"
