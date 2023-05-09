@@ -15,3 +15,5 @@ vars:
     name: search
 images:
 - name: avocado-search
+  newName: 749740892195.dkr.ecr.ap-northeast-2.amazonaws.com/avocado-search
+  newTag: "154"
