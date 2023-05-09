@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     app: client
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - protocol: TCP
       port: 80
