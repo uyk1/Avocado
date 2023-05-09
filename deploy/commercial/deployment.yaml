@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: commercial
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: commercial
+  template:
+    metadata:
+      labels:
+        app: commercial
+    spec:
+      containers:
+      - name: commercial
+        image: avocado-commercial
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080

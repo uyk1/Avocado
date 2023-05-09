@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: search
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: search
+  template:
+    metadata:
+      labels:
+        app: search
+    spec:
+      containers:
+      - name: search
+        image: avocado-search
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080
