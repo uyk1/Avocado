@@ -15,3 +15,5 @@ vars:
     name: payment
 images:
 - name: avocado-payment
+  newName: 749740892195.dkr.ecr.ap-northeast-2.amazonaws.com/avocado-payment
+  newTag: "166"
