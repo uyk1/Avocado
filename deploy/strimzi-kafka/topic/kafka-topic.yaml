@@ -53,7 +53,7 @@ spec:
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
-  name: test-ad-view1
+  name: test-click1
   labels:
     strimzi.io/cluster: my-cluster
 spec:
