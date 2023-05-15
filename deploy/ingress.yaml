@@ -61,6 +61,13 @@ spec:
             name: avocado-payment
             port:
               number: 80
+      - path: /api/statistics
+        pathType: Prefix
+        backend:
+          service:
+            name: avocado-statistics
+            port:
+              number: 80
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

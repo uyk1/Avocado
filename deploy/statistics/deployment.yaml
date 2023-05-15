@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: statistics
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: statistics
+  template:
+    metadata:
+      labels:
+        app: statistics
+    spec:
+      containers:
+      - name: statistics
+        image: avocado-statistics
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080
