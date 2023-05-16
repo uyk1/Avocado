@@ -10,7 +10,7 @@ spring:
         auto-offset-reset: latest
         num-stream-threads: 1
         commit-interval-ms: 5000
-        dest-topic-name: stream-result
+        dest-topic-name: test-result1
         wait-timeout: 60*1000 # 60 seconds
         streams:
             application-id: streaming
