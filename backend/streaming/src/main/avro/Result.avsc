@@ -1,6 +1,6 @@
 {
   "name": "Result",
-  "namespace": "com.avocado.streaming",
+  "namespace": "com.avocado",
   "type": "record",
   "fields": [
     {
