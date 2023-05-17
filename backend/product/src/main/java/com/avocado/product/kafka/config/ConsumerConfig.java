@@ -2,7 +2,8 @@ package com.avocado.product.kafka.config;
 
 import com.avocado.MemberEvent;
 import com.avocado.PurchaseHistory;
-import com.avocado.product.kafka.utils.SpecificAvroDeserializer;
+
+import io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

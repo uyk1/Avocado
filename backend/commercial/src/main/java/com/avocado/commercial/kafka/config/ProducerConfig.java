@@ -1,4 +1,4 @@
-package com.avocado.commercial.kafka;
+package com.avocado.commercial.kafka.config;
 
 import com.avocado.Adview;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
