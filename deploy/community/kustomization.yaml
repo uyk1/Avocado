@@ -16,4 +16,4 @@ vars:
 images:
 - name: avocado-community
   newName: 749740892195.dkr.ecr.ap-northeast-2.amazonaws.com/avocado-community
-  newTag: "337"
+  newTag: "345"
