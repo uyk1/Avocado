@@ -131,7 +131,7 @@ spec:
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
-  name: test-member-event
+  name: test-member-event1
   labels:
     strimzi.io/cluster: my-cluster
 spec:
