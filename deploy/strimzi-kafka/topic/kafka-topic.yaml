@@ -131,6 +131,32 @@ spec:
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
+  name: test-member-event
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 3
+  replicas: 2
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+---
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: test-ad-status
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 3
+  replicas: 2
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+---
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
   name: test-purchase-history1
   labels:
     strimzi.io/cluster: my-cluster
