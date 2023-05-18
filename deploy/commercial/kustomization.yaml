@@ -16,4 +16,4 @@ vars:
 images:
 - name: avocado-commercial
   newName: 749740892195.dkr.ecr.ap-northeast-2.amazonaws.com/avocado-commercial
-  newTag: "377"
+  newTag: "378"
