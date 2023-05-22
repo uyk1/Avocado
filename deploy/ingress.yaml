@@ -68,6 +68,13 @@ spec:
             name: avocado-statistics
             port:
               number: 80
+      - path: /kibana
+        pathType: Prefix
+        backend:
+          service:
+            name: kibana-kibana
+            port:
+              number: 80
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -90,13 +97,13 @@ spec:
             name: argocd-server
             port:
               number: 80    
-# ---
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   annotations:
-#   name: headless-default-to-argocd
-#   namespace: default
-# spec:
-#   clusterIP: None
-#   externalName: argocd-server.argocd.svc.cluster.local # reference svc-C in ns-B
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  name: headless-default-to-argocd
+  namespace: default
+spec:
+  clusterIP: None
+  externalName: argocd-server.argocd.svc.cluster.local # reference svc-C in ns-B
