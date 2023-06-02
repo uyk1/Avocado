@@ -459,6 +459,12 @@ git commit -m "S08P31A506-92 [feat | fix | docs | refactor | test | chore | styl
     
 - [API 명세](https://www.notion.so/API-6d1b0933fc8e42f491dd538c159ec5dd)
 
+## 📎  4. Scrum Meeting
+- 매일 아침 스크럼 회의 실시
+- 각 팀원 및 팀 전체의 작업 진행 현황 확인
+- 어제 한 일과 오늘 할 일을 서로 이야기하고 노션에 작성
+- 팀원 간 작업 내용 이해 및 프로젝트 진행을 확인함으로써 작업 안정성 향상 및 효율성 제고
+
 # ⭐   V. 팀원
 
 ---
